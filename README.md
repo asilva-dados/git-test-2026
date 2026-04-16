@@ -8,20 +8,17 @@ Este repositório utiliza as branches:
 - `develop`: integração das funcionalidades em desenvolvimento
 - `feat/readme`: branch de funcionalidade para criação/ajuste do README
 
-### 1) Atualizar branches base
+### 1) Atualizar main e criar a develop pela 1a vez
 
 ```bash
-git checkout main
 git pull origin main
 
-git checkout develop
-git pull origin develop
+git checkout -b develop
 ```
 
 ### 2) Criar branch de funcionalidade a partir de `develop`
 
 ```bash
-git checkout develop
 git checkout -b feat/readme
 ```
 
@@ -50,7 +47,7 @@ Quando as alterações de `develop` estiverem prontas para release:
 - revisar e aprovar
 - realizar merge em `main`
 
-### 6) Sincronizar as branches locais
+### 6) Sincronizar as branches locais (seu computador)
 
 ```bash
 git checkout main
